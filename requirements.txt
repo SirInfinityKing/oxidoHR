@@ -1,0 +1,21 @@
+langchain-core>=0.3.15,<0.4.0
+langchain-groq==0.2.1
+python-dotenv==1.0.0
+requests==2.31.0
+typing-extensions==4.9.0
+pathlib==1.0.1
+cryptography==42.0.2
+tkhtmlview
+chardet
+rich
+aiohttp
+pydantic
+
+# Development dependencies
+pytest
+pytest-cov
+black
+isort
+pylint
+mypy
+types-requests

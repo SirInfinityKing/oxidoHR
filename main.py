@@ -1,37 +1,24 @@
-import openai
+import logging
 import os
-from dotenv import load_dotenv
-from config import OPENAI_MODEL, MAX_TOKENS, PROMPT
-
-# Załaduj klucz API z pliku .env
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
-
-def get_ai_text():
-    with open("ai.txt", "r", encoding="utf-8") as file:
-        return file.read().strip()
-
-def create_prompt():
-    ai_text = get_ai_text()
-    return f"{PROMPT.strip()}\n\n{ai_text}"
+from src.article_processor import ArticleProcessor
+from src.logger import setup_logger
 
 def main():
-    # Przygotowanie prompta jako wiadomości
-    messages = [{"role": "user", "content": create_prompt()}]
+    # Konfiguracja loggera
+    setup_logger()
+    logger = logging.getLogger(__name__)
     
-    # Wysyłanie prompta do API OpenAI
-    response = openai.ChatCompletion.create(
-        model=OPENAI_MODEL,
-        messages=messages,
-        max_tokens=MAX_TOKENS
-    )
-    
-    # Pobranie odpowiedzi z modelu
-    html_content = response.choices[0].message['content'].strip()
-
-    # Zapisanie odpowiedzi do pliku HTML
-    with open("artykul.html", "w", encoding="utf-8") as file:
-        file.write(html_content)
+    try:
+        # Użyj konkretnego pliku ai.txt
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        input_file = os.path.join(script_dir, 'ai.txt')
+        
+        # Przetwórz artykuł - walidacja jest teraz w ArticleProcessor
+        processor = ArticleProcessor()
+        processor.process_file(input_file)
+        
+    except Exception as e:
+        logger.error(f"Wystąpił błąd: {str(e)}")
 
 if __name__ == "__main__":
     main()

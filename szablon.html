@@ -4,41 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podgląd Artykułu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <style>
+        /* Zmienne CSS dla łatwego dostosowania motywu */
+        :root {
+            --primary-color: #2c3e50;
+            --text-color: #333;
+            --background-color: #fff;
+            --link-color: #3498db;
+            --max-width: 800px;
+            --font-main: system-ui, -apple-system, sans-serif;
+        }
+
+        /* Tryb ciemny */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary-color: #3498db;
+                --text-color: #f5f5f5;
+                --background-color: #1a1a1a;
+                --link-color: #5dade2;
+            }
+        }
+
+        /* Podstawowe style */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
+            font-family: var(--font-main);
             line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: var(--max-width);
+            margin: 0 auto;
         }
-        h1, h2, h3 {
-            color: #0056b3;
+
+        /* Style dla nagłówków */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--primary-color);
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            line-height: 1.2;
         }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.75em; }
+        h4 { font-size: 1.5em; }
+        h5 { font-size: 1.25em; }
+        h6 { font-size: 1em; }
+
+        /* Paragrafy */
         p {
-            margin: 10px 0;
+            margin-bottom: 1.2em;
         }
+
+        /* Obrazy */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5em auto;
+        }
+
+        /* Linki */
         a {
-            color: #0056b3;
+            color: var(--link-color);
             text-decoration: none;
         }
+
         a:hover {
             text-decoration: underline;
+        }
+
+        /* Listy */
+        ul, ol {
+            margin: 1em 0;
+            padding-left: 2em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Cytaty */
+        blockquote {
+            margin: 1.5em 0;
+            padding-left: 1em;
+            border-left: 4px solid var(--primary-color);
+            font-style: italic;
+        }
+
+        /* Kod */
+        pre, code {
+            background-color: rgba(0, 0, 0, 0.05);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        pre {
+            padding: 1em;
+            overflow-x: auto;
+        }
+
+        pre code {
+            padding: 0;
+            background: none;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.75em; }
+            h3 { font-size: 1.5em; }
+            h4 { font-size: 1.25em; }
+            h5 { font-size: 1.1em; }
+            h6 { font-size: 1em; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Wklejony artykuł pojawi się tutaj -->
-    </div>
+    <!-- Tutaj zostanie wklejony artykuł -->
 </body>
 </html>

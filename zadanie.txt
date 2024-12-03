@@ -1,0 +1,125 @@
+Zadanie rekrutacyjne 
+Junior AI Developer 
+
+Cieszymy się, że bierzesz udział w rekrutacji do Oxido! Przed Tobą pierwszy merytoryczny etap 
+rekrutacji – zadanie testowe. Jego opis znajduje się poniżej.  
+
+Do  realizacji  każdego  elementu  śmiało  możesz  korzystać  z  AI.  W  końcu  Oxido  staramy  się 
+budować w podejściu AI First, o którym Marek Jeleśniański, CEO Oxido, wspominał na swoim 
+blogu.  
+
+Opis zadania 
+Twoim zadaniem jest stworzenie prostej aplikacji w Pythonie lub JavaScript (do wyboru), która: 
+
+1.  Łączy się z API OpenAI; 
+2.  Odczytuje plik tekstowy z artykułem – tu znajdziesz plik do pobrania; 
+3.  Treść artykułu wraz z promptem przekazuje do OpenAI w celu obróbki (opisane poniżej); 
+4.  Zapisuje otrzymany od OpenAI kod w pliku artykul.html. 
+
+Kod artykułu wygenerowany przez AI powinien spełniać następujące wytyczne: 
+
+•  Użycie odpowiednich tagów HTML do strukturyzacji treści. 
+
+•  Określenie wspólnie z AI miejsc, gdzie warto wstawić graﬁki – oznaczamy je z użyciem 
+tagu  <img>  z atrybutem  src="image_placeholder.jpg".  Dodaj  atrybut  alt  do 
+każdego obrazka z dokładnym promptem, który możemy użyć do wygenerowania graﬁki. 
+Umieść podpisy pod graﬁkami używając odpowiedniego tagu HTML. 
+
+•  Brak kodu CSS ani JavaScript. Zwrócony kod powinien zawierać wyłącznie zawartość do 
+wstawienia  pomiędzy  tagami  <body>  i  </body>.  Nie  dołączaj  znaczników  <html>, 
+<head> ani <body>. 
+
+Wygenerowany  kod  HTML  zapisz  w  pliku  artykul.html  –  naturalnie  nie  będzie  on 
+walidowalny bez nagłówków HTML czy sekcji <head>, ale to nie szkodzi. 
+Cały  kod  aplikacji,  przykładowy  artykuł  i  wygenerowany  plik  artykul.html  wrzuć  do 
+repozytorium. Więcej informacji w sekcji „Jak odesłać zadanie?”. 
+
+oxido.pl 
+
+ 
+ 
+ 
+ 
+ 
+ 
+Dla chętnych 
+Wygeneruj szablon HTML do podglądu artykułu. W tym celu możesz opracować style i kod JS, 
+które pozwolą na wizualizację tekstu po wklejeniu jego kodu do sekcji <body>. Sekcja <body> 
+powinna  być  pusta  i  gotowa  na  wklejenie  artykułu.  Taki  pusty  szablon  zapisz  w  pliku 
+szablon.html, a pełny podgląd artykułu w pliku podglad.html.  
+Masz tu pełną dowolność pomijając fakt, że kod całego szablonu i kod podglądu artykułu muszą 
+znaleźć się – każdy z nich z osobna – w jednym pliku. Możesz odwoływać się do plików bibliotek 
+dostępnych online, ale nie dodawaj ich do repozytorium. 
+
+Czas na realizację zadania 
+Na  wykonanie  zadania  masz  3  dni  kalendarzowe.  Dokładny  termin  określony  jest  w  mailu, 
+w którym przesłaliśmy tę instrukcję.  
+
+Jak odesłać zadanie? 
+Rezultat prac wyślij do publicznie dostępnego repozytorium (GitHub lub Bitbucket). Zachęcamy 
+do  systematycznego commitowania  postępów.  Do  repozytorium  dołącz plik  readme z  opisem 
+instrukcją  uruchomienia.  Następnie,  przekaż  wynik  zadania  za 
+działania  aplikacji 
+pośrednictwem formularza: 
+
+i 
+
+https://oxido.pl/praca/junior-ai-developer/zadanie-rekrutacyjne/  
+
+Co będziemy oceniać? 
+Ocenimy: 
+
+1.  Kod Python/JS odpowiadający za pracę aplikacji i integrację z API; 
+2.  Jakość kodu HTML artykułu; 
+3.  Jakość promptów; 
+4.  Opcjonalnie: szablon do prezentacji kodu artykułu. 
+
+Nie ocenimy zadań wysłanych po terminie.  
+
+Dostęp do API i inne zasady 
+Korzystanie z API OpenAI co do zasady jest płatne. Jeśli potrzebujesz, wyślemy Ci nasz klucz do 
+API i będziesz mogła/mógł zrealizować zadanie bez ponoszenia żadnych kosztów. Jednocześnie 
+opłaty  nie  powinny  być  duże  – zależą  głównie  od  tego,  ile  testów  wykonasz  przed  wysłaniem 
+gotowego rozwiązania. 
+
+Jeśli  chcesz  nasz  klucz  do  API,  jak  najszybciej  odpisz  na  otrzymanego  maila.  Odpowiemy 
+w możliwie  najkrótszym  terminie  –  jednocześnie  nie  spowoduje  to  wydłużenia  czasu  na 
+realizację zadania. Kluczy nie wysyłamy „automatycznie” ze względów bezpieczeństwa.  
+
+Dla  jasności:  nie  zwracamy  żadnych  kosztów  i  nie  płacimy  za  realizację  zadania.  Twojego 
+rozwiązania  nie  będziemy  wykorzystywać  w  żadnym  innym  celu  niż  rekrutacja  do  Oxido. 
+Zachowujesz pełne prawa autorskie, w tym majątkowe.  
+
+oxido.pl 
+
+ 
+ 
+Kolejne etapy 
+Planujemy  ocenić  wszystkie  zadania  wysłane  w  terminie  i  dać  Ci  feedback.  Jednocześnie 
+otrzymaliśmy  bardzo  dużo  aplikacji,  więc  prosimy  o  cierpliwość.  Na  pewno  otrzymasz  od  nas 
+wiadomość, jak Ci poszło. Będziemy starali się dokonać oceny do dwóch tygodni od terminu na 
+realizację zadania. Trzymaj za nas kciuki! ;) 
+
+W standardowym scenariuszu przed wybranymi Kandydatami będzie tylko jeszcze jeden etap – 
+spotkanie online, które powinno pozwolić nam na podjęcie decyzji.  
+
+Jeśli zakwaliﬁkujesz się do tego etapu, termin spotkania wybierzesz samodzielnie – otrzymasz 
+link do kalendarza. Na spotkaniu poinformujemy Cię, jak długo będzie trzeba poczekać na ﬁnalną 
+decyzję.  Również  w tym  przypadku  na  pewno  otrzymasz  min.  krótką  odpowiedź  – 
+„tak”/„nie”/„jeszcze chwila!”. 
+
+Podpowiemy,  tylko  nie  mów  Markowi:  do  rozmowy  możesz  się  przygotować  będąc  na  bieżąco 
+z tym,  co  do  zaoferowania  mają  LLM-y  oraz  generatory  AI  do  tworzenia  różnego  rodzaju 
+multimediów.  Ważna  będzie  też  znajomość  ogólnych  zasad  budowania  i  utrzymania  stron  
+internetowych, w tym na WordPressie.  
+
+Trzymamy kciuki 
+Życzymy Ci powodzenia! To, co na pewno zyskujesz dzięki realizacji zadania rekrutacyjnego, to 
+przedsmak  tego,  co  potencjalnie  czeka  na  Ciebie  w  Oxido.  Niecierpliwie  czekamy  na  Twoją 
+propozycję rozwiązania zadania! 
+
+oxido.pl 
+
+ 
+ 
+
